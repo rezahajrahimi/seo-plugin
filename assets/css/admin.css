@@ -1,0 +1,579 @@
+/**
+ * استایل‌های مدرن و شیک مدیریت افزونه سئو هوشمند (Smart AI SEO Optimizer)
+ * طراحی پیشرفته، شیشه‌ای (Glassmorphism)، تایپوگرافی مدرن و پالت رنگی حرفه‌ای
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --smart-primary: #3b82f6;
+    --smart-primary-hover: #2563eb;
+    --smart-primary-light: #eff6ff;
+    --smart-success: #10b981;
+    --smart-success-light: #ecfdf5;
+    --smart-warning: #f59e0b;
+    --smart-warning-light: #fffbeb;
+    --smart-danger: #ef4444;
+    --smart-danger-light: #fef2f2;
+    --smart-purple: #8b5cf6;
+    --smart-purple-light: #f5f3ff;
+    --smart-dark: #0f172a;
+    --smart-slate-800: #1e293b;
+    --smart-slate-600: #475569;
+    --smart-slate-400: #94a3b8;
+    --smart-slate-200: #e2e8f0;
+    --smart-slate-100: #f8fafc;
+    --smart-card-bg: #ffffff;
+    --smart-radius-lg: 12px;
+    --smart-radius-md: 8px;
+    --smart-radius-sm: 6px;
+    --smart-shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.05);
+    --smart-shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+    --smart-shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.03);
+}
+
+.smart-ai-seo-settings-wrap,
+.smart-ai-seo-panel {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Vazirmatn', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--smart-slate-800);
+}
+
+/* هدر لوکس صفحه تنظیمات و کارخانه محتوا */
+.smart-header-hero {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    border-radius: var(--smart-radius-lg);
+    padding: 26px 30px;
+    margin: 20px 0 25px;
+    color: #ffffff;
+    box-shadow: var(--smart-shadow-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.smart-header-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, rgba(59, 130, 246, 0) 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.smart-header-hero h1 {
+    margin: 0 0 6px 0;
+    font-size: 22px;
+    font-weight: 800;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.smart-header-hero p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 13.5px;
+    line-height: 1.6;
+}
+
+.smart-header-badge {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #38bdf8;
+}
+
+/* کارت‌ها و کادرهای مدرن */
+.smart-card {
+    background: var(--smart-card-bg);
+    border: 1px solid var(--smart-slate-200);
+    border-radius: var(--smart-radius-lg);
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: var(--smart-shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.smart-card:hover {
+    box-shadow: var(--smart-shadow-md);
+}
+
+.smart-card h2 {
+    margin-top: 0;
+    font-size: 17px;
+    font-weight: 700;
+    border-bottom: 1px solid var(--smart-slate-200);
+    padding-bottom: 14px;
+    color: var(--smart-slate-800);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ورودی‌ها و پنل تحلیل در متاباکس */
+.smart-panel-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: var(--smart-slate-100);
+    padding: 20px;
+    border-radius: var(--smart-radius-md);
+    border: 1px solid var(--smart-slate-200);
+}
+
+.smart-input-group label {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--smart-slate-800);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.smart-input-group input[type="text"],
+.smart-input-group textarea,
+.smart-card input[type="text"],
+.smart-card input[type="password"],
+.smart-card select,
+.smart-card textarea {
+    border-radius: var(--smart-radius-md) !important;
+    border: 1.5px solid var(--smart-slate-200) !important;
+    padding: 8px 12px !important;
+    font-size: 13.5px !important;
+    transition: all 0.2s ease-in-out !important;
+    box-shadow: none !important;
+}
+
+.smart-input-group input:focus,
+.smart-input-group textarea:focus,
+.smart-card input:focus,
+.smart-card select:focus,
+.smart-card textarea:focus {
+    border-color: var(--smart-primary) !important;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15) !important;
+}
+
+/* دکمه‌های شیک و مدرن */
+.button.button-primary {
+    background: linear-gradient(135deg, var(--smart-primary) 0%, var(--smart-primary-hover) 100%) !important;
+    border: none !important;
+    border-radius: var(--smart-radius-md) !important;
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    box-shadow: 0 2px 4px rgba(37, 99, 235, 0.25) !important;
+    transition: all 0.2s ease !important;
+    text-shadow: none !important;
+}
+
+.button.button-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(37, 99, 235, 0.35) !important;
+}
+
+.button.button-secondary {
+    border-radius: var(--smart-radius-md) !important;
+    border: 1px solid var(--smart-slate-200) !important;
+    font-weight: 500 !important;
+    transition: all 0.15s ease !important;
+}
+
+.button.button-secondary:hover {
+    border-color: var(--smart-primary) !important;
+    color: var(--smart-primary) !important;
+    background: #ffffff !important;
+}
+
+/* تب‌های ناوبری شبیه داشبوردهای SaaS مدرن */
+.smart-tabs-nav {
+    display: flex;
+    gap: 6px;
+    background: var(--smart-slate-100);
+    padding: 6px;
+    border-radius: var(--smart-radius-md);
+    border: 1px solid var(--smart-slate-200);
+    margin-bottom: 20px;
+    overflow-x: auto;
+}
+
+.smart-tab-btn {
+    background: transparent;
+    border: none;
+    padding: 9px 18px;
+    border-radius: var(--smart-radius-sm);
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--smart-slate-600);
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.smart-tab-btn:hover {
+    color: var(--smart-dark);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.smart-tab-btn.active {
+    background: #ffffff;
+    color: var(--smart-primary);
+    box-shadow: var(--smart-shadow-sm);
+}
+
+.smart-tab-content {
+    display: none;
+    animation: fadeInTab 0.25s ease-out;
+}
+
+.smart-tab-content.active {
+    display: block;
+}
+
+@keyframes fadeInTab {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* نوار نتایج و وضعیت امتیاز سئو */
+.smart-results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.smart-score-badge {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 800;
+    font-size: 15px;
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.smart-summary-box {
+    background: #f0fdf4;
+    border-right: 4px solid var(--smart-success);
+    padding: 14px 18px;
+    border-radius: var(--smart-radius-sm);
+    margin-bottom: 20px;
+    font-size: 13.5px;
+    line-height: 1.8;
+    color: #14532d;
+}
+
+/* آیتم‌های مشکلات سئو */
+.smart-issues-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.issue-item {
+    background: #ffffff;
+    border: 1px solid var(--smart-slate-200);
+    border-radius: var(--smart-radius-md);
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.issue-item.issue-error {
+    border-right: 4px solid var(--smart-danger);
+    background: var(--smart-danger-light);
+}
+
+.issue-item.issue-warning {
+    border-right: 4px solid var(--smart-warning);
+    background: var(--smart-warning-light);
+}
+
+.issue-item.issue-info {
+    border-right: 4px solid var(--smart-primary);
+    background: var(--smart-primary-light);
+}
+
+/* آیتم‌های پیشنهادات سئو */
+.smart-recomms-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.recomm-item {
+    background: #ffffff;
+    border: 1px solid var(--smart-slate-200);
+    border-radius: var(--smart-radius-md);
+    padding: 14px 16px;
+    margin-bottom: 12px;
+}
+
+.recomm-item .badge {
+    display: inline-block;
+    padding: 3px 9px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 8px;
+}
+
+.recomm-item.priority-high .badge {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+.recomm-item.priority-medium .badge {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.recomm-item.priority-low .badge {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.recomm-item .impact {
+    margin: 6px 0 0;
+    color: var(--smart-slate-600);
+    font-size: 12px;
+}
+
+/* پیش‌نمایش و اعمال */
+.smart-meta-suggestions {
+    background: var(--smart-slate-100);
+    padding: 18px;
+    border-radius: var(--smart-radius-md);
+    border: 1px solid var(--smart-slate-200);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-with-action {
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+}
+
+.smart-content-preview-box {
+    border: 1px solid var(--smart-slate-200);
+    border-radius: var(--smart-radius-md);
+    overflow: hidden;
+}
+
+.preview-actions-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f1f5f9;
+    padding: 12px 18px;
+    border-bottom: 1px solid var(--smart-slate-200);
+}
+
+.preview-actions-bar h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.smart-preview-area {
+    padding: 20px;
+    background: #ffffff;
+    max-height: 480px;
+    overflow-y: auto;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/* چیپ‌های کلمات LSI */
+.smart-lsi-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 12px;
+}
+
+.smart-lsi-chip {
+    background: #ffffff;
+    border: 1px solid var(--smart-slate-200);
+    border-radius: var(--smart-radius-md);
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    transition: all 0.2s;
+}
+
+.smart-lsi-chip:hover {
+    border-color: var(--smart-primary);
+    box-shadow: var(--smart-shadow-sm);
+}
+
+.smart-lsi-chip.is-found {
+    border-right: 4px solid var(--smart-success);
+    background: #f0fdf4;
+}
+
+.smart-lsi-chip.is-missing {
+    border-right: 4px solid var(--smart-warning);
+    background: #fffbeb;
+}
+
+.lsi-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lsi-status {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+/* لینک‌سازی هوشمند داخلی */
+.smart-linking-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linking-item {
+    background: #ffffff;
+    border: 1px solid var(--smart-slate-200);
+    border-radius: var(--smart-radius-md);
+    padding: 14px 18px;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.linking-info {
+    font-size: 13.5px;
+}
+
+.linking-info code {
+    background: #f1f5f9;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 700;
+    color: var(--smart-primary);
+}
+
+.target-topic {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: var(--smart-slate-600);
+}
+
+.linking-actions {
+    display: flex;
+    gap: 8px;
+}
+
+/* خوشه‌های موضوعی (Pillar & Cluster) */
+.pillar-box {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border: 1.5px solid #86efac;
+    border-radius: var(--smart-radius-lg);
+    padding: 22px;
+    margin-top: 18px;
+    box-shadow: var(--smart-shadow-sm);
+}
+
+.pillar-badge {
+    background: #15803d;
+    color: #ffffff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11.5px;
+    font-weight: 700;
+}
+
+.clusters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.cluster-card {
+    background: #ffffff;
+    border: 1px solid var(--smart-slate-200);
+    border-radius: var(--smart-radius-lg);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--smart-shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cluster-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--smart-shadow-md);
+    border-color: #93c5fd;
+}
+
+.cluster-card h4 {
+    margin: 10px 0 8px;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--smart-slate-800);
+}
+
+.cluster-badge {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 700;
+    align-self: flex-start;
+}
+
+/* دکمه‌های همگام‌سازی یک‌کلیکه */
+.smart-sync-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px dashed var(--smart-slate-200);
+    font-size: 12.5px;
+}
+
+/* نوارهای پیشرفت و لودینگ مدرن */
+#bulk-progress-container {
+    background: #e2e8f0;
+    border-radius: 20px;
+    height: 18px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+#bulk-progress-bar {
+    background: linear-gradient(90deg, #3b82f6 0%, #10b981 100%);
+    box-shadow: 0 1px 3px rgba(16, 185, 129, 0.4);
+}
+
+.smart-hidden {
+    display: none !important;
+}
