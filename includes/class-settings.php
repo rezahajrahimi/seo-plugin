@@ -223,6 +223,10 @@ class Smart_AI_SEO_Settings {
 
                 <?php submit_button( 'ذخیره تنظیمات هوش مصنوعی' ); ?>
             </form>
+
+            <!-- بخش معرفی افزونه‌های مکمل و منتخب وب‌دیده -->
+            <?php self::render_promo_showcase(); ?>
+
         </div>
         <script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -239,6 +243,70 @@ class Smart_AI_SEO_Settings {
                 toggleSections();
             });
         </script>
+        <?php
+    }
+
+    /**
+     * رندر بخش معرفی افزونه‌های مکمل و پرکاربرد توسعه‌دهنده
+     */
+    public static function render_promo_showcase() {
+        ?>
+        <div class="smart-promo-showcase">
+            <h2 class="smart-promo-showcase-title">
+                <span>💎</span> افزونه‌های مکمل پیشنهادی جهت رشد فروش و مدیریت فروشگاه شما
+            </h2>
+            <div class="smart-promo-grid">
+
+                <!-- کارت درگاه کارت به کارت -->
+                <div class="smart-promo-card promo-cardtocard">
+                    <div>
+                        <div class="smart-promo-card-header">
+                            <div class="smart-promo-icon">💳</div>
+                            <div>
+                                <h3>تایید خودکار کارت به کارت ووکامرس</h3>
+                                <span class="smart-promo-tag">Webdide Card to Card</span>
+                            </div>
+                        </div>
+                        <p>درگاه پرداخت هوشمند کارت به کارت مستقیم با تایید خودکار و استعلام آنی فیش واریزی در ووکامرس بدون نیاز به بررسی دستی و بدون کارمزد بانکی.</p>
+                        <ul class="smart-promo-features">
+                            <li>✅ تایید خودکار و اتوماتیک فیش‌های واریزی</li>
+                            <li>✅ اتصال به سیستم‌های پیامکی و اعتبارسنجی آنی</li>
+                            <li>✅ افزایش نرخ تبدیل مشتریانی که رمز پویا ندارند</li>
+                        </ul>
+                    </div>
+                    <div class="smart-promo-actions">
+                        <a href="https://wordpress.org/plugins/webdide-card-to-card-verification/" target="_blank" rel="noopener noreferrer" class="smart-promo-btn btn-cardtocard">
+                            <span>دریافت رایگان از مخزن وردپرس</span> ↗
+                        </a>
+                    </div>
+                </div>
+
+                <!-- کارت فروش در دایرکت اینستاگرام -->
+                <div class="smart-promo-card promo-instagram">
+                    <div>
+                        <div class="smart-promo-card-header">
+                            <div class="smart-promo-icon">📸</div>
+                            <div>
+                                <h3>فروش محصولات سایت در دایرکت اینستاگرام</h3>
+                                <span class="smart-promo-tag">Pilotlane Social Catalog Sync</span>
+                            </div>
+                        </div>
+                        <p>همگام‌سازی خودکار کاتالوگ محصولات ووکامرس با شبکه‌های اجتماعی جهت فروش مستقیم و پاسخ‌دهی به سفارش‌ها در دایرکت اینستاگرام.</p>
+                        <ul class="smart-promo-features">
+                            <li>✅ اتصال هوشمند ووکامرس به کاتالوگ اینستاگرام</li>
+                            <li>✅ ثبت سفارش و صدور فاکتور آسان در چت و دایرکت</li>
+                            <li>✅ بروزرسانی خودکار موجودی و قیمت‌ها بدون اتلاف وقت</li>
+                        </ul>
+                    </div>
+                    <div class="smart-promo-actions">
+                        <a href="https://wordpress.org/plugins/pilotlane-social-catalog-sync-woocommerce/" target="_blank" rel="noopener noreferrer" class="smart-promo-btn btn-instagram">
+                            <span>دریافت رایگان از مخزن وردپرس</span> ↗
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
         <?php
     }
 }

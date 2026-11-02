@@ -574,6 +574,167 @@
     box-shadow: 0 1px 3px rgba(16, 185, 129, 0.4);
 }
 
+/* استایل بخش افزونه‌های منتخب و پیشنهادی */
+.smart-promo-showcase {
+    margin-top: 35px;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    border: 1px solid #cbd5e1;
+    border-radius: var(--smart-radius-lg);
+    padding: 24px;
+    box-shadow: var(--smart-shadow-sm);
+}
+
+.smart-promo-showcase-title {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--smart-slate-800);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.smart-promo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.smart-promo-card {
+    background: #ffffff;
+    border: 1px solid var(--smart-slate-200);
+    border-radius: var(--smart-radius-md);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(15, 23, 42, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.smart-promo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--smart-shadow-md);
+    border-color: #93c5fd;
+}
+
+.smart-promo-card.promo-instagram {
+    border-top: 4px solid #ec4899;
+}
+
+.smart-promo-card.promo-cardtocard {
+    border-top: 4px solid #10b981;
+}
+
+.smart-promo-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.smart-promo-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background: #f1f5f9;
+    flex-shrink: 0;
+}
+
+.promo-instagram .smart-promo-icon {
+    background: #fdf2f8;
+    color: #db2777;
+}
+
+.promo-cardtocard .smart-promo-icon {
+    background: #ecfdf5;
+    color: #059669;
+}
+
+.smart-promo-card-header h3 {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--smart-slate-800);
+}
+
+.smart-promo-tag {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background: #f1f5f9;
+    color: #475569;
+}
+
+.smart-promo-card p {
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--smart-slate-600);
+    margin: 0 0 16px 0;
+}
+
+.smart-promo-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 18px 0;
+    font-size: 12.5px;
+    color: #334155;
+}
+
+.smart-promo-features li {
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.smart-promo-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.smart-promo-btn {
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12.5px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: var(--smart-radius-sm);
+    transition: all 0.2s ease;
+}
+
+.smart-promo-btn.btn-instagram {
+    background: linear-gradient(135deg, #e11d48 0%, #db2777 100%);
+    color: #ffffff !important;
+}
+
+.smart-promo-btn.btn-instagram:hover {
+    box-shadow: 0 4px 10px rgba(225, 29, 72, 0.35);
+    transform: translateY(-1px);
+}
+
+.smart-promo-btn.btn-cardtocard {
+    background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+    color: #ffffff !important;
+}
+
+.smart-promo-btn.btn-cardtocard:hover {
+    box-shadow: 0 4px 10px rgba(16, 185, 129, 0.35);
+    transform: translateY(-1px);
+}
+
 .smart-hidden {
     display: none !important;
 }
+

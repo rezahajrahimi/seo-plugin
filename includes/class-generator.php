@@ -487,6 +487,9 @@ class Smart_AI_SEO_Generator {
                 </div>
             </div>
 
+            <!-- بخش معرفی افزونه‌های مکمل و منتخب وب‌دیده -->
+            <?php Smart_AI_SEO_Settings::render_promo_showcase(); ?>
+
         </div>
         <?php
     }
